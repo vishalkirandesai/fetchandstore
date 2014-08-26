@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # With great help from -> http://soundcloud.com/you/apps/connect-with-soundcloud-rails-demo
-  SOUNDCLOUD_CLIENT_ID     = "d2d8943e0bf4fec71dad5c1e72a814e3"
-  SOUNDCLOUD_CLIENT_SECRET = "c05e1fa7f34c7eb34255db489c16ed77"
+  SOUNDCLOUD_CLIENT_ID     = "3c0cc5b1a12f1f96632540f8bd115218"
+  SOUNDCLOUD_CLIENT_SECRET = "24a2e9c8073b69c943b9c5c0c41d8a98"
 
   def self.soundcloud_client(options={})
     options = {

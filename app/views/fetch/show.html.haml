@@ -1,0 +1,22 @@
+.infos
+  .details
+    %b Your SoundCloud User Infos:
+    %ul
+      %li
+        Username: #{@me.username}
+      %li
+        Fullname: #{@me.full_name}
+      %li
+        Location: #{@me.city}, #{@me.country}
+  = image_tag(@me.avatar_url, :class => "avatar")
+.description
+  - form_tag you_update_path, :method => "post" do
+    %b Description:
+    %textarea{:name => "description"}= @me.description
+    %input{:type => "submit", :value => "update"}/
+    %span.warning this will change your SoundCloud profile description!
+.tracks
+  %b Your 5 latest tracks
+  %ul
+    - @tracks.each do |track|
+      %li= link_to track.title, track.permalink_url

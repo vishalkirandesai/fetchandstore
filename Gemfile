@@ -49,3 +49,9 @@ gem 'jquery-rails'
  gem 'debugger'
 
  end
+
+ gem 'hpricot'
+
+ gem 'ruby_parser', '3.1.1'
+
+ gem 'html2haml'
