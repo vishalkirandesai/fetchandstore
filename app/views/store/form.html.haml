@@ -1,0 +1,5 @@
+%html
+  %body
+    %form
+      %input{:type=>"text",:name=>"bucket_name"}
+      = button_to "Create bucket",you_bucket_create_path(:bucket_name => :name)

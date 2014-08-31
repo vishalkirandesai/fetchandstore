@@ -11,4 +11,9 @@ class FetchController < ApplicationController
     res = current_user.soundcloud_client.put("/me", :user => {:description => params[:description]})
     redirect_to :action => :show
   end
+
+  def view
+    @track_url = params[:t_url]
+    @embed_info = current_user.soundcloud_client.get('/oembed', :url => @track_url,:iframe => "false")
+  end
 end

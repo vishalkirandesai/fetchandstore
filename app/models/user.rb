@@ -1,7 +1,13 @@
+require 'yaml'
+
 class User < ActiveRecord::Base
   # With great help from -> http://soundcloud.com/you/apps/connect-with-soundcloud-rails-demo
-  SOUNDCLOUD_CLIENT_ID     = "3c0cc5b1a12f1f96632540f8bd115218"
-  SOUNDCLOUD_CLIENT_SECRET = "24a2e9c8073b69c943b9c5c0c41d8a98"
+  @credentials = YAML.load_file('./config/credentials.yml')
+
+  SOUNDCLOUD_CLIENT_ID     = @credentials['soundcloud']['client_id']
+  SOUNDCLOUD_CLIENT_SECRET = @credentials['soundcloud']['client_secret']
+
+  attr_accessible :soundcloud_access_token, :soundcloud_expires_at, :soundcloud_refresh_token, :soundcloud_user_id, :soundcloud_username, :photo_attributes
 
   def self.soundcloud_client(options={})
     options = {

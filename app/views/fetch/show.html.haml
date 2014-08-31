@@ -19,4 +19,10 @@
   %b Your 5 latest tracks
   %ul
     - @tracks.each do |track|
-      %li= link_to track.title, track.permalink_url
+      %li
+      = link_to track.title, track.permalink_url
+      - if track.downloadable
+        = link_to "View to download", you_track_view_path(:t_url =>track.permalink_url)
+
+
+

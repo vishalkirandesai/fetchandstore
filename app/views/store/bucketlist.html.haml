@@ -1,0 +1,10 @@
+.info
+  .details
+    %b User information
+    %ul
+      - if not @buckets.nil?
+        - @buckets.each do |bucket|
+          %li
+            %form
+              %input{:type=>"radio",action_name=>"store(#{bucket})"}Name : #{bucket.displayname},Bucket name : #{bucket.name}
+    %a{:href=>"/you/buckets/form"} Create new bucket and store.

@@ -34,5 +34,8 @@ private
     @soundcloud_client = User.soundcloud_client(:redirect_uri  => soundcloud_connected_url)
   end
 
+  def upload
+
+  end
 
 end

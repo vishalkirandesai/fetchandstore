@@ -1,0 +1,6 @@
+%html
+   %body
+   %h4 Requested Track
+   .player
+   = @embed_info["html"]
+   =link_to "Copy to S3",you_bucket_list_path(:url=>@track_url)

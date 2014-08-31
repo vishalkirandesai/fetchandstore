@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Fetchandstore::Application.load_tasks
+FetchAndStore::Application.load_tasks
