@@ -1,10 +1,9 @@
 .info
   .details
-    %b User information
+    %b Choose a bucket to store the file into.
     %ul
       - if not @buckets.nil?
         - @buckets.each do |bucket|
           %li
-            %form
-              %input{:type=>"radio",action_name=>"store(#{bucket})"}Name : #{bucket.displayname},Bucket name : #{bucket.name}
-    %a{:href=>"/you/buckets/form"} Create new bucket and store.
+            = link_to bucket.name,you_bucket_store_path(:bucket_name=> bucket.name,:track_uri=>@track_uri)
+    = link_to "Create new bucket and store.",you_bucket_form_path

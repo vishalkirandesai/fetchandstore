@@ -22,7 +22,7 @@
       %li
       = link_to track.title, track.permalink_url
       - if track.downloadable
-        = link_to "View to download", you_track_view_path(:t_url =>track.permalink_url)
+        = link_to "View to download", you_track_view_path(:track_uri =>track.uri)
 
 
 

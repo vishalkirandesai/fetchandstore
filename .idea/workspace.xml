@@ -5,7 +5,7 @@
     <ignored path="fetchandstore.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1408997607788" ignored="false" />
-    <file path="/Gemfile" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409506839488" ignored="false" />
+    <file path="/Gemfile" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409560448789" ignored="false" />
     <file path="$PROJECT_DIR$/../soundcloudrailsconnect/connect-with-soundcloud-rails-demo/app/models/user.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409071025539" ignored="false" />
     <file path="$PROJECT_DIR$/../soundcloudrailsconnect/connect-with-soundcloud-rails-demo/Gemfile" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1408977650809" ignored="false" />
     <file path="$PROJECT_DIR$/../soundcloudrailsconnect/connect-with-soundcloud-rails-demo/config/database.yml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1408992659936" ignored="false" />
@@ -30,20 +30,21 @@
     <file path="/config.ru" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409068320411" ignored="false" />
     <file path="/a.dummy" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409133552644" ignored="false" />
     <file path="/application.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409469978187" ignored="false" />
-    <file path="/fetch_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409494019783" ignored="false" />
-    <file path="/show.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409491187234" ignored="false" />
-    <file path="/view.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409493421824" ignored="false" />
-    <file path="/Dummy.txt" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409144091990" ignored="false" />
+    <file path="/fetch_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409586775949" ignored="false" />
+    <file path="/show.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409584132881" ignored="false" />
+    <file path="/view.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409584149313" ignored="false" />
+    <file path="/Dummy.txt" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409576901238" ignored="false" />
     <file path="/connected.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409471181631" ignored="false" />
     <file path="/login.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409473589029" ignored="false" />
     <file path="/amazon_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409486416123" ignored="false" />
     <file path="/Rakefile" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409474538222" ignored="false" />
     <file path="/credentials.yml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409475315410" ignored="false" />
-    <file path="/store_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409506655539" ignored="false" />
-    <file path="/bucketlist.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409500000760" ignored="false" />
+    <file path="/store_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409588329354" ignored="false" />
+    <file path="/bucketlist.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409586909346" ignored="false" />
     <file path="/store_helper.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409493256398" ignored="false" />
     <file path="/createbucket.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409500323850" ignored="false" />
-    <file path="/amazon_user.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409510726578" ignored="false" />
+    <file path="/amazon_user.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409568413876" ignored="false" />
+    <file path="/store.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409587991341" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +67,25 @@
       <file leaf-file-name="bucketlist.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/store/bucketlist.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="11" selection-start="60" selection-end="64" vertical-scroll-proportion="-2.5">
+            <state line="7" column="102" selection-start="253" selection-end="253" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/fetch/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="24" column="80" selection-start="757" selection-end="757" vertical-scroll-proportion="-15.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/store/store.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -84,43 +94,52 @@
       <file leaf-file-name="form.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/store/form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="78" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soundcloud_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/soundcloud_controller.rb">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/fetch/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="50" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/fetch/view.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="61" selection-start="131" selection-end="131" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.47244096">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -129,25 +148,7 @@
       <file leaf-file-name="fetch_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/fetch_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="100" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="amazon_user.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/amazon_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3202847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credentials.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/credentials.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="15" column="68" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,30 +164,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/amazon_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/fetch/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/fetch_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/store_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/store/createbucket.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/fetch/view.html.haml" />
-        <option value="$PROJECT_DIR$/config/credentials.yml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/store/form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/soundcloud/connected.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/store/bucketlist.html.haml" />
         <option value="$PROJECT_DIR$/app/models/amazon_user.rb" />
+        <option value="$PROJECT_DIR$/config/credentials.yml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/fetch/view.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/fetch/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/fetch_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/store/bucketlist.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/store/store.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1303" />
-    <option name="height" value="773" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -214,6 +215,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,6 +309,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -376,24 +382,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fetchandstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fetchandstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -401,7 +389,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,13 +532,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -585,6 +565,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -706,15 +693,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25419664" sideWeight="0.6713396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25860688" sideWeight="0.6713396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -723,6 +709,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -793,16 +780,72 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/soundcloud/connected.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="54" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0">
+        <state line="3" column="81" selection-start="114" selection-end="114" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="33" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/amazon_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="54" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/credentials.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="61" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/soundcloud_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/store/form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/fetch_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="68" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -816,91 +859,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fetch/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="86" selection-start="763" selection-end="763" vertical-scroll-proportion="-15.0">
+        <state line="24" column="80" selection-start="757" selection-end="757" vertical-scroll-proportion="-15.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fetch/view.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="103" selection-end="103" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/store/form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="78" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/fetch_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="100" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/soundcloud_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="50" vertical-scroll-proportion="0.0">
+        <state line="4" column="61" selection-start="131" selection-end="131" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/bucketlist.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="60" selection-end="64" vertical-scroll-proportion="-2.5">
+        <state line="7" column="102" selection-start="253" selection-end="253" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/store/store.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/credentials.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/amazon_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3202847">
+        <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.47244096">
           <folding />
         </state>
       </provider>

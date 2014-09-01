@@ -13,7 +13,6 @@ class FetchController < ApplicationController
   end
 
   def view
-    @track_url = params[:t_url]
-    @embed_info = current_user.soundcloud_client.get('/oembed', :url => @track_url,:iframe => "false")
+    @track = current_user.soundcloud_client.get(params[:track_uri])
   end
 end

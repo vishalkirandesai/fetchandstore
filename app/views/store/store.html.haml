@@ -1,0 +1,5 @@
+- if @stored
+  %b Stored file #{@track.title} to #{@bucket.name} bucket.
+- else
+  %b File #{@track.title} is already stored in #{@bucket.name} bucket.
+= link_to "<< back to Track list",you_path
