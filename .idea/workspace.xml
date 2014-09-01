@@ -38,7 +38,7 @@
     <file path="/login.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409473589029" ignored="false" />
     <file path="/amazon_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409486416123" ignored="false" />
     <file path="/Rakefile" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409474538222" ignored="false" />
-    <file path="/credentials.yml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409475315410" ignored="false" />
+    <file path="/credentials.yml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409589931262" ignored="false" />
     <file path="/store_controller.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409588329354" ignored="false" />
     <file path="/bucketlist.html.haml" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409586909346" ignored="false" />
     <file path="/store_helper.rb" changelist="c7b5655f-9ac4-401f-bfd0-3fa083af0f32" time="1409493256398" ignored="false" />
@@ -127,19 +127,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="store_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.47244096">
+            <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <file leaf-file-name="credentials.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/credentials.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.75">
+            <state line="6" column="50" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17716536">
               <folding />
             </state>
           </provider>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/app/views/soundcloud/connected.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/amazon_user.rb" />
-        <option value="$PROJECT_DIR$/config/credentials.yml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/fetch/view.html.haml" />
         <option value="$PROJECT_DIR$/app/views/fetch/show.html.haml" />
@@ -180,6 +179,7 @@
         <option value="$PROJECT_DIR$/app/views/store/bucketlist.html.haml" />
         <option value="$PROJECT_DIR$/app/views/store/store.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
+        <option value="$PROJECT_DIR$/config/credentials.yml" />
       </list>
     </option>
   </component>
@@ -808,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/credentials.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/soundcloud_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="50" vertical-scroll-proportion="0.0">
@@ -887,7 +880,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.47244096">
+        <state line="16" column="7" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/credentials.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="50" selection-start="183" selection-end="183" vertical-scroll-proportion="0.17716536">
           <folding />
         </state>
       </provider>
