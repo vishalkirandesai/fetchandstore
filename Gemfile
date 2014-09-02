@@ -8,6 +8,7 @@ gem 'rails', '3.2.18'
 gem 'mysql2', '>0.3'
 gem 'soundcloud', '0.2.0'
 gem 'aws-sdk'
+gem 'open_uri_redirections'
 
 
 

@@ -41,4 +41,8 @@ class User < ActiveRecord::Base
     
     client
   end
+
+  def get_client_id
+    SOUNDCLOUD_CLIENT_ID
+  end
 end

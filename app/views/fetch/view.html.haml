@@ -2,4 +2,4 @@
    %h4 Requested Track
    .track_info
       %b #{@track.title}
-      =button_to "Copy to S3",you_bucket_list_path(:track_uri=>@track.uri)
+      =button_to "Copy to S3",you_bucket_list_path(:track_url=>@track.permalink_url)

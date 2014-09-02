@@ -13,6 +13,7 @@ class FetchController < ApplicationController
   end
 
   def view
-    @track = current_user.soundcloud_client.get(params[:track_uri])
+    #@track = current_user.soundcloud_client.get(params[:track_uri])
+    @track = current_user.soundcloud_client.get('/resolve', :url => params[:track_url],:client_id=>current_user.get_client_id)
   end
 end
