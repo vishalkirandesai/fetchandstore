@@ -8,7 +8,7 @@ FetchAndStore::Application.routes.draw do
   match '/you/buckets', :to => 'store#bucketlist', :as => :you_bucket_list
   match '/you/buckets/store', :to =>'store#store', :as => :you_bucket_store
   match '/you/buckets/create', :to =>'store#create', :as => :you_bucket_create
-  match '/you/buckets/form', :to =>'store#form', :as => :you_bucket_form
+  match '/you/buckets/create/form', :to =>'store#form', :as => :you_bucket_form
 
   match '/soundcloud/connect',    :to => 'soundcloud#connect',    :as => :soundcloud_connect
   match '/soundcloud/connected',  :to => 'soundcloud#connected',  :as => :soundcloud_connected

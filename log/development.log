@@ -36479,3 +36479,2614 @@ Processing by FetchController#show as HTML
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
   Rendered fetch/show.html.haml within layouts/application (2.5ms)
 Completed 200 OK in 486.6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:19:08 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 75.2ms (Views: 63.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:19:08 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 2.9ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:19:11 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 516.1ms
+
+Soundcloud::ResponseError (HTTP status: 401 error: invalid_grant):
+  app/controllers/fetch_controller.rb:6:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:19:18 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 427.3ms
+
+Soundcloud::ResponseError (HTTP status: 401 error: invalid_grant):
+  app/controllers/fetch_controller.rb:6:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:19:20 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 5.7ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:19:23 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 452.5ms
+
+Soundcloud::ResponseError (HTTP status: 401 error: invalid_grant):
+  app/controllers/fetch_controller.rb:6:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:20:40 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 5.7ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/soundcloud/disconnect" for 127.0.0.1 at 2014-09-02 21:20:44 +0300
+Processing by SoundcloudController#disconnect as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 4.0ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:20:44 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 5.0ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2014-09-02 21:20:45 +0300
+Processing by SoundcloudController#connect as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=5b156cb90fa02b09235b40576749d388&redirect_uri=http://localhost:3000/soundcloud/connected&display=popup
+Completed 302 Found in 3.2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/soundcloud/connected?code=d0b281a25e31618415c52b8ee32a8cb2" for 127.0.0.1 at 2014-09-02 21:20:47 +0300
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"d0b281a25e31618415c52b8ee32a8cb2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`soundcloud_user_id` = 104173245 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `soundcloud_access_token` = '1-94707-104173245-66937e20215ffa', `soundcloud_refresh_token` = 'd61e7c827f1b82545da2adecc1fff7af', `soundcloud_expires_at` = '2014-09-03 00:20:47', `updated_at` = '2014-09-02 18:20:48' WHERE `users`.`id` = 1
+  [1m[36m (69.4ms)[0m  [1mCOMMIT[0m
+  Rendered soundcloud/connected.html.haml (5.5ms)
+Completed 200 OK in 669.2ms (Views: 26.8ms | ActiveRecord: 70.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:20:53 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 8.8ms (Views: 4.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:20:55 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 515.6ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:20:57 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 758.9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:21:00 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.950701 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (956.2ms)
+Completed 200 OK in 1497.6ms (Views: 957.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:21:04 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 7.6ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 21:21:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 4.1ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:24:33 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.359324 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1361.7ms)
+Completed 200 OK in 1367.2ms (Views: 1363.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:24:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (44.9ms)
+Completed 500 Internal Server Error in 49.3ms
+
+ActionView::Template::Error (undefined local variable or method `bucket_name' for #<#<Class:0x007f908821d228>:0x007f9088659850>):
+    1: %html
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=> bucket_name }
+    5:       = button_to "Create bucket",you_bucket_create_path(:bucket_name => bucket_name,:track_url=>@track_url)
+  app/views/store/form.html.haml:4:in `_app_views_store_form_html_haml__3031118355322035711_70129370205780'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:25:10 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.575198 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (577.5ms)
+Completed 200 OK in 586.5ms (Views: 580.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:25:12 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 13.8ms
+
+ActionView::Template::Error (undefined local variable or method `bucket_name' for #<#<Class:0x007f908821d228>:0x007f90885445f0>):
+    1: %html
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=> bucket_name }
+    5:       = button_to "Create bucket",you_bucket_create_path(:bucket_name => :bucket_name,:track_url=>@track_url)
+  app/views/store/form.html.haml:4:in `_app_views_store_form_html_haml__3031118355322035711_70129369809840'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:25:42 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.574739 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (577.1ms)
+Completed 200 OK in 582.3ms (Views: 580.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:25:45 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 10.7ms
+
+ActionView::Template::Error (undefined local variable or method `bucket_name' for #<#<Class:0x007f908821d228>:0x007f9088cea818>):
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=>"bucket_name"}
+    5:       = button_to "Create bucket",you_bucket_create_path(:bucket_name => bucket_name,:track_url=>@track_url)
+  app/views/store/form.html.haml:5:in `_app_views_store_form_html_haml__3031118355322035711_70129373628980'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:27:16 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.961928 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (964.4ms)
+Completed 200 OK in 971.5ms (Views: 967.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:27:19 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 6.2ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 21:27:29 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 3.6ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:32:49 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 75.6ms (Views: 64.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:32:49 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 2.9ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:32:51 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 678.3ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:32:53 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 448.5ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:32:56 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 1.027022 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1060.4ms)
+Completed 200 OK in 1601.3ms (Views: 1061.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:32:59 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 10.0ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 21:33:09 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2.8ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:33:55 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 5.4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?bucket_name=samething&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 21:34:18 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"samething", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 5.0ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 21:37:31 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 16.8ms (Views: 3.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 21:37:33 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 548.5ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:37:35 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 573.5ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:37:37 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.892742 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (895.4ms)
+Completed 200 OK in 901.4ms (Views: 897.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 21:37:40 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 7.9ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 21:37:43 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 5.9ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 22:46:04 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 46.5ms (Views: 2.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 22:46:06 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 547.4ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:46:08 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 402.2ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:46:09 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.743561 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (745.8ms)
+Completed 200 OK in 751.2ms (Views: 747.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:46:12 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 7.5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:46:15 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 5.8ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:49:31 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 49.3ms (Views: 3.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:49:34 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 3.2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:49:39 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2.6ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 22:53:00 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 17.1ms (Views: 2.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 22:53:01 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 425.4ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:53:03 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 430.5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:53:04 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.595 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (597.1ms)
+Completed 200 OK in 603.1ms (Views: 598.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:53:06 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 9.8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:53:11 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 5.5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 22:54:38 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 86.1ms (Views: 44.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 22:54:40 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 3.9ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 22:54:41 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 430.3ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:54:43 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 778.9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:54:44 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.771485 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (777.2ms)
+Completed 200 OK in 1334.6ms (Views: 778.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 22:54:48 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 9.6ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo%3D" for 127.0.0.1 at 2014-09-02 22:54:53 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.3ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 23:16:58 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 4.7ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 23:17:00 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 7.4ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 23:17:01 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 517.3ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 23:17:56 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 533.0ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 23:18:50 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 437.5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 23:52:57 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 79.5ms (Views: 64.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-02 23:52:57 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 2.8ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-02 23:52:59 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 427.6ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:53:03 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 428.2ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:53:05 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.84923 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (882.3ms)
+Completed 200 OK in 1428.5ms (Views: 883.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:53:09 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 6.4ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create.bucket_name?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:53:14 +0300
+Processing by StoreController#create as 
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 3.7ms
+
+ArgumentError (bucket_name may not be blank):
+  app/controllers/store_controller.rb:34:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:55:03 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 4.1ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create?bucket_name=bucket_name&track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:55:08 +0300
+Processing by StoreController#create as HTML
+  Parameters: {"bucket_name"=>"bucket_name", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 409 0.691468 0 retries] create_bucket(:bucket_name=>"bucket_name") AWS::S3::Errors::BucketAlreadyExists The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+
+Completed 500 Internal Server Error in 695.9ms
+
+AWS::S3::Errors::BucketAlreadyExists (The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.):
+  app/controllers/store_controller.rb:34:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:57:59 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.106843 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1109.5ms)
+Completed 200 OK in 1115.7ms (Views: 1112.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:58:01 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 7.9ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-02 23:58:05 +0300
+Processing by StoreController#create as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 2.9ms
+
+ArgumentError (bucket_name may not be blank):
+  app/controllers/store_controller.rb:34:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:00:46 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 5.6ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:00:50 +0300
+Processing by StoreController#create as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 40.2ms
+
+ArgumentError (bucket_name may not be blank):
+  app/controllers/store_controller.rb:34:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:00:54 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6.7ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:10:24 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 14.6ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/you/buckets/create?bucket_name=name&track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:10:27 +0300
+Processing by StoreController#create as HTML
+  Parameters: {"bucket_name"=>"name", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 409 0.878971 0 retries] create_bucket(:bucket_name=>"name") AWS::S3::Errors::BucketAlreadyExists The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+
+Completed 500 Internal Server Error in 884.4ms
+
+AWS::S3::Errors::BucketAlreadyExists (The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.):
+  app/controllers/store_controller.rb:34:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 00:28:38 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 41.2ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 00:28:39 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 457.7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:28:43 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 464.4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:28:44 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.92176 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (924.2ms)
+Completed 200 OK in 929.9ms (Views: 927.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:28:47 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 8.7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore" for 127.0.0.1 at 2014-09-03 00:28:54 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 3.0ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore" for 127.0.0.1 at 2014-09-03 00:29:38 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 4.6ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:30:53 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.604565 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (607.0ms)
+Completed 200 OK in 613.5ms (Views: 610.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:30:55 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+ERROR: compiling _app_views_store_form_html_haml___2983923204747762220_70228696374460 RAISED /home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected ')', expecting tASSOC
+...reate bucket",onclick=create())}>\n  </form>\n</div>\n", -2,...
+...                               ^
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: unknown regexp options - dv
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected $undefined
+...create())}>\n  </form>\n</div>\n", -2, false);::Haml::Util.h...
+...                               ^
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: unterminated string meets end of file
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected $end, expecting '}'
+Function body:           def _app_views_store_form_html_haml___2983923204747762220_70228696374460(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "store/form";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["area", "base", "basefont", "br", "col", "command", "embed", "frame", "hr", "img", "input", "isindex", "keygen", "link", "menuitem", "meta", "param", "source", "track", "wbr"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<div class='bucket_form'>\n  <form#{_hamlout.adjust_tabs(1); 
+_hamlout.attributes({}, nil, :action_name=>you_bucket_create_path(:track_url=>@track_url))}>\n    <input name='bucket_name' type='text'>\n    <input#{_hamlout.adjust_tabs(1); 
+
+_hamlout.attributes({}, nil, :type=>"submit",:value=>"Create bucket",onclick=create())}>\n  </form>\n</div>\n", -2, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:425:in `_run__641876393411676513__process_action__3651292852397129416__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `_run__2746706820921911024__call__2889999155408295085__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/engine.rb:484:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/application.rb:231:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered store/form.html.haml within layouts/application (46.5ms)
+Completed 500 Internal Server Error in 51.0ms
+
+ActionView::Template::Error (/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected ')', expecting tASSOC
+...reate bucket",onclick=create())}>\n  </form>\n</div>\n", -2,...
+...                               ^
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: unknown regexp options - dv
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected $undefined
+...create())}>\n  </form>\n</div>\n", -2, false);::Haml::Util.h...
+...                               ^
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: unterminated string meets end of file
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:4: syntax error, unexpected $end, expecting '}'):
+    1: .bucket_form
+    2:    %form{:action_name=>you_bucket_create_path(:track_url=>@track_url)}
+    3:       %input{:type=>"text",:name=>"bucket_name"}
+    4:       %input{:type=>"submit",:value=>"Create bucket",onclick=create()}
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.18) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.18) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.18) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:425:in `_run__641876393411676513__process_action__3651292852397129416__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.18) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__2746706820921911024__call__2889999155408295085__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:31:18 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.578155 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (580.4ms)
+Completed 200 OK in 585.8ms (Views: 582.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:31:20 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 10.1ms
+
+ActionView::Template::Error (undefined method `create' for #<#<Class:0x007fbec8f213e8>:0x007fbec8bc6bd0>):
+    1: .bucket_form
+    2:    %form{:action_name=>you_bucket_create_path(:track_url=>@track_url)}
+    3:       %input{:type=>"text",:name=>"bucket_name"}
+    4:       %input{:type=>"submit",:value=>"Create bucket",:onclick=>create()}
+  app/views/store/form.html.haml:4:in `_app_views_store_form_html_haml___2983923204747762220_70228694148580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:31:40 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.519589 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (522.4ms)
+Completed 200 OK in 527.5ms (Views: 524.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:31:41 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+ERROR: compiling _app_views_store_form_html_haml___2983923204747762220_70228696759440 RAISED /home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:5: syntax error, unexpected keyword_ensure, expecting ')'
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:7: syntax error, unexpected keyword_end, expecting '}'
+Function body:           def _app_views_store_form_html_haml___2983923204747762220_70228696759440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "store/form";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["area", "base", "basefont", "br", "col", "command", "embed", "frame", "hr", "img", "input", "isindex", "keygen", "link", "menuitem", "meta", "param", "source", "track", "wbr"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<div class='bucket_form'>\n  <form#{_hamlout.adjust_tabs(1); 
+_hamlout.attributes({}, nil, :action_name=>you_bucket_create_path(:track_url=>@track_url))}>\n    <input name='bucket_name' type='text'>\n    <input#{_hamlout.adjust_tabs(1); 
+
+_hamlout.attributes({}, nil, :type=>"submit",:value=>"Create bucket",:onclick=>store#create())}>\n  </form>\n</div>\n", -2, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:425:in `_run__641876393411676513__process_action__3651292852397129416__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `_run__2746706820921911024__call__2889999155408295085__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/engine.rb:484:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/application.rb:231:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 7.0ms
+
+ActionView::Template::Error (/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:5: syntax error, unexpected keyword_ensure, expecting ')'
+/home/vishal/Documents/Projects/ubit/fetchandstore/app/views/store/form.html.haml:7: syntax error, unexpected keyword_end, expecting '}'):
+    2:    %form{:action_name=>you_bucket_create_path(:track_url=>@track_url)}
+    3:       %input{:type=>"text",:name=>"bucket_name"}
+    4:       %input{:type=>"submit",:value=>"Create bucket",:onclick=>store#create()}
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.18) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.18) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.18) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.18) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.18) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.18) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:425:in `_run__641876393411676513__process_action__3651292852397129416__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.18) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.18) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.18) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.18) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.18) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__2746706820921911024__call__2889999155408295085__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:32:19 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"iF7mqtWU8I8VAUaf4RvDJAHyzSbg0YeRItTVRS9aWRo=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.742954 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (745.0ms)
+Completed 200 OK in 750.5ms (Views: 748.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 00:32:21 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 7.4ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore" for 127.0.0.1 at 2014-09-03 00:32:29 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 5.4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 10:43:23 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 11.2ms (Views: 3.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/soundcloud/connect" for 127.0.0.1 at 2014-09-03 10:43:26 +0300
+Processing by SoundcloudController#connect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to https://soundcloud.com/connect?response_type=code_and_token&client_id=5b156cb90fa02b09235b40576749d388&redirect_uri=http://localhost:3000/soundcloud/connected&display=popup
+Completed 302 Found in 7.1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/soundcloud/connected?code=6401b19d99b53b6db4bebf8e93326c5a" for 127.0.0.1 at 2014-09-03 10:43:28 +0300
+Processing by SoundcloudController#connected as HTML
+  Parameters: {"code"=>"6401b19d99b53b6db4bebf8e93326c5a"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`soundcloud_user_id` = 104173245 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (24.0ms)[0m  [1mUPDATE `users` SET `soundcloud_access_token` = '1-94707-104173245-5a451c106fc72a', `soundcloud_refresh_token` = 'ce182740c20ed77a129ac6698237268c', `soundcloud_expires_at` = '2014-09-03 13:43:28', `updated_at` = '2014-09-03 07:43:29' WHERE `users`.`id` = 1[0m
+  [1m[35m (48.4ms)[0m  COMMIT
+  Rendered soundcloud/connected.html.haml (2.3ms)
+Completed 200 OK in 1387.7ms (Views: 4.4ms | ActiveRecord: 73.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 10:43:32 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 7.0ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 10:43:34 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 404.3ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 10:43:37 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 400.5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 10:43:39 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.751634 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (753.6ms)
+Completed 200 OK in 758.9ms (Views: 755.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 10:43:41 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9.8ms
+
+ActionView::Template::Error (undefined method `create' for #<#<Class:0x007fbec85a4860>:0x007fbec837fd50>):
+    1: %html
+    2:   %body
+    3:     %form
+    4:       = text_field(@bucket_name,create())
+    5:       = button_to "Create bucket",you_bucket_create_path
+  app/views/store/form.html.haml:4:in `_app_views_store_form_html_haml___2983923204747762220_70228688523700'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:11:25 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.707512 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (709.5ms)
+Completed 200 OK in 712.2ms (Views: 711.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:11:28 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 8.5ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:11:39 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:12:26 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4.3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:12:29 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 5.7ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:14:31 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 14.6ms (Views: 2.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:14:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 6.5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:15:13 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.550977 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (553.3ms)
+Completed 200 OK in 569.3ms (Views: 555.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:15:15 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 7.6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:15:19 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 41.5ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:16:14 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.652284 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1654.2ms)
+Completed 200 OK in 1670.6ms (Views: 1656.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:16:17 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4.1ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:16:20 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 6.0ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:17:31 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.66771 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (669.8ms)
+Completed 200 OK in 718.9ms (Views: 671.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:17:33 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 9.0ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:17:37 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2.7ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 11:20:31 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 87.6ms (Views: 68.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:20:33 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 709.7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:20:35 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 641.3ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:20:38 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.862792 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (908.6ms)
+Completed 200 OK in 1678.2ms (Views: 910.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:20:42 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 394.2ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:20:47 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 184.3ms
+
+Soundcloud::ResponseError (HTTP status: 404):
+  app/controllers/store_controller.rb:29:in `form'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 11:23:04 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 2.7ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:23:06 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 386.1ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:23:08 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 391.2ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:23:12 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.067682 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1069.9ms)
+Completed 200 OK in 1073.2ms (Views: 1071.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:23:19 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 411.4ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:23:29 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 174.4ms
+
+Soundcloud::ResponseError (HTTP status: 404):
+  app/controllers/store_controller.rb:29:in `form'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:26:27 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 389.4ms (Views: 6.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:26:29 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 396.9ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:26:30 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.728 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (729.9ms)
+Completed 200 OK in 735.1ms (Views: 731.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:26:32 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 9.3ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:26:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 4.5ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:27:29 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.983367 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (985.3ms)
+Completed 200 OK in 1001.5ms (Views: 986.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:27:32 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 5.7ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:27:35 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.2ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 11:51:29 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 14.4ms (Views: 2.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:51:31 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 550.1ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:51:32 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 800.0ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:51:34 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.781674 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (782.7ms)
+Completed 200 OK in 787.7ms (Views: 784.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:51:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.8ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:51:40 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:53:50 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.593792 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (596.3ms)
+Completed 200 OK in 643.3ms (Views: 598.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:53:53 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 7.7ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:53:57 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 3.6ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:55:25 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.552519 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (554.5ms)
+Completed 200 OK in 570.1ms (Views: 556.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 11:55:26 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 6.5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:55:30 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 3.3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:56:14 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 457.8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:56:18 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 461.8ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:56:21 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.651435 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (653.6ms)
+Completed 200 OK in 656.6ms (Views: 655.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/store?bucket_name=1-fetchandstore&track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:56:24 +0300
+Processing by StoreController#store as HTML
+  Parameters: {"bucket_name"=>"1-fetchandstore", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 404 0.374642 0 retries] head_object(:bucket_name=>"1-fetchandstore",:key=>"demo3.aif") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.067255 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>0,:data=>#<StringIO:0x007fddc45ccfe8>,:key=>"demo3.aif")  
+
+[AWS S3 200 2.586218 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>372782,:data=>#<StringIO:0x007fddc483bcc0>,:key=>"demo3.aif")  
+
+  Rendered store/store.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4275.3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:56:30 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 368.8ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 11:58:35 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 461.0ms (Views: 7.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:58:54 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 401.2ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:58:55 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.544281 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (546.3ms)
+Completed 200 OK in 551.5ms (Views: 548.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 11:59:00 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 6.3ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 11:59:03 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 6.0ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:01:06 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 53.3ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:01:11 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 3.7ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:01:17 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 6.9ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:01:25 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 5.7ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 12:02:39 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 83.3ms (Views: 71.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 12:02:39 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 5.1ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 12:02:40 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 439.8ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:02:43 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 410.3ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:02:45 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.760946 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (794.0ms)
+Completed 200 OK in 1329.5ms (Views: 795.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:02:49 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 7.7ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create" for 127.0.0.1 at 2014-09-03 12:02:54 +0300
+Processing by StoreController#create as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 2.0ms
+
+NoMethodError (undefined method `Bucket' for <AWS::S3>:AWS::S3):
+  app/controllers/store_controller.rb:29:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 12:03:12 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 400.9ms (Views: 6.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:03:14 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 404.8ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:03:15 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.656061 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (658.1ms)
+Completed 200 OK in 669.3ms (Views: 662.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:03:17 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 6.1ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create" for 127.0.0.1 at 2014-09-03 12:03:21 +0300
+Processing by StoreController#create as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 2.4ms
+
+ArgumentError (bucket_name may not be blank):
+  app/controllers/store_controller.rb:29:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:07:30 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 44.8ms
+
+ActionView::Template::Error (undefined method `stringify_keys' for :name:Symbol):
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=>"bucket_name"}
+    5:       = link_to "Create bucket >>",you_bucket_create_path(html_options_for_form(you_bucket_create_path,:name))
+  app/views/store/form.html.haml:5:in `_app_views_store_form_html_haml__4299553114160115125_69938517948000'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:07:32 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 392.1ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:07:33 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.85928 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (861.7ms)
+Completed 200 OK in 866.6ms (Views: 864.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:07:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3.5ms
+
+ActionView::Template::Error (undefined method `stringify_keys' for :name:Symbol):
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=>"bucket_name"}
+    5:       = link_to "Create bucket >>",you_bucket_create_path(html_options_for_form(you_bucket_create_path,:name))
+  app/views/store/form.html.haml:5:in `_app_views_store_form_html_haml__4299553114160115125_69938517948000'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:08:31 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 383.7ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:08:33 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.551066 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (553.4ms)
+Completed 200 OK in 558.3ms (Views: 556.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:08:34 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 7.3ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:08:39 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:13:49 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.554039 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (556.0ms)
+Completed 200 OK in 608.7ms (Views: 557.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:13:51 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 9.2ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:13:54 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5.4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:14:58 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.170564 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1173.6ms)
+Completed 200 OK in 1178.1ms (Views: 1176.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:15:00 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 7.9ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:15:03 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 6.0ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:16:29 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.70278 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (705.0ms)
+Completed 200 OK in 711.2ms (Views: 708.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:16:32 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 7.2ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:16:41 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2.9ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 12:17:30 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 86.0ms (Views: 73.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 12:17:33 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 463.5ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:17:36 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 388.3ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:17:37 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 1.125147 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (1165.2ms)
+Completed 200 OK in 1713.5ms (Views: 1166.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:17:40 +0300
+
+ActionController::RoutingError (uninitialized constant You):
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__3922390599548367028__call__620804108017039842__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 12:19:39 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 479.9ms (Views: 69.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:19:41 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 408.8ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:19:43 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.851156 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (885.4ms)
+Completed 200 OK in 1421.1ms (Views: 887.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:19:46 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 8.7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore&authenticity_token=wR9OcBKk8gB12K2POPeb2%2BGFqFF%2BLOoCshJKYGSgwPU%3D" for 127.0.0.1 at 2014-09-03 12:19:50 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore", "authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 5.2ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:20:36 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 7.0ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create" for 127.0.0.1 at 2014-09-03 12:20:40 +0300
+Processing by StoreController#create as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 2.5ms
+
+ArgumentError (bucket_name may not be blank):
+  app/controllers/store_controller.rb:29:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 12:20:57 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 7.7ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:22:46 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (44.2ms)
+Completed 500 Internal Server Error in 46.7ms
+
+ActionView::Template::Error (undefined local variable or method `bucket_name' for #<#<Class:0x007fc8c4adc890>:0x007fc8c51836d0>):
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=>"bucket_name"}
+    5:       = link_to "Create bucket >>",you_bucket_create_path(:bucket_name=>raw(bucket_name))
+  app/views/store/form.html.haml:5:in `_app_views_store_form_html_haml___2310221046263159562_70250138459620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:25:29 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.741227 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (743.6ms)
+Completed 200 OK in 749.7ms (Views: 747.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:25:31 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 6.5ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:27:47 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.551146 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (553.3ms)
+Completed 200 OK in 556.9ms (Views: 555.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 12:27:48 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 7.0ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/you/buckets/create/form?bucket_name=2-fetchandstore" for 127.0.0.1 at 2014-09-03 12:27:53 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"bucket_name"=>"2-fetchandstore"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered store/form.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 2.2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 13:00:33 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 3.2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 13:10:25 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.769657 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (771.8ms)
+Completed 200 OK in 777.9ms (Views: 773.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/you/buckets/create/form?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 13:10:27 +0300
+Processing by StoreController#form as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered store/form.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 4.9ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    2:   %body
+    3:     %form
+    4:       %input{:type=>"text",:name=>"bucket_name"}
+    5:       = link_to "Create bucket", you_bucket_create_path,{:action => :preview, :id => @topic.id},{:onclick => "this.href +='?bucket_name='+encodeURIComponent($F('id_of_the_form_element')); return true", :id => 'link', :target =>"_blank"}
+  app/views/store/form.html.haml:5:in `_app_views_store_form_html_haml___2310221046263159562_70250138498600'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 14:10:06 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 201.0ms (Views: 64.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 14:10:06 +0300
+Processing by FetchController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 2.7ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:10:09 +0300
+Processing by FetchController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/show.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 1623.3ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 14:10:14 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/view.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 436.8ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 14:10:33 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 200 0.79496 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (828.2ms)
+Completed 200 OK in 1483.1ms (Views: 829.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/store?bucket_name=1-fetchandstore&track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo1" for 127.0.0.1 at 2014-09-03 14:10:36 +0300
+Processing by StoreController#store as HTML
+  Parameters: {"bucket_name"=>"1-fetchandstore", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 404 0.36749 0 retries] head_object(:bucket_name=>"1-fetchandstore",:key=>"demo1.aif") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.06651 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>0,:data=>#<StringIO:0x007f27742861b0>,:key=>"demo1.aif")  
+
+[AWS S3 200 4.299992 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>1015854,:data=>#<StringIO:0x007f27741d92a8>,:key=>"demo1.aif")  
+
+  Rendered store/store.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 6501.3ms (Views: 17.7ms | ActiveRecord: 0.2ms)

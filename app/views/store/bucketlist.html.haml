@@ -6,4 +6,4 @@
         - @buckets.each do |bucket|
           %li
             = link_to bucket.name,you_bucket_store_path(:bucket_name=> bucket.name,:track_url=>@track_url)
-    = link_to "Create new bucket and store.",you_bucket_form_path
+    = link_to "Create new bucket and store.",you_bucket_form_path(:track_url=>@track_url)

@@ -1,0 +1,7 @@
+.create_info
+  - if @created
+    %b Created a Bucket named
+      = link_to @bucket.name,you_bucket_store_path(:bucket_name=> @bucket_to_create.name,:track_url=>@track_url)
+  - else
+    %b Couldn't create a bucket.
+      = link_to "<< Select an existing one.",you_bucket_list_path(:track_url=>@track_url)

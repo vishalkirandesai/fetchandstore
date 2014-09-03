@@ -25,12 +25,13 @@ class StoreController < ApplicationController
     end
   end
 
-  def form
-
-  end
-
   def create
-    @bucket = AmazonUser.client.buckets.create(params[:bucket_name])
-    redirect_to you_bucket_list_path
+    @bucket_to_create = AmazonUser.client.buckets.create(params[:bucket_name].to_s)
+    if @bucket.exists?
+      @created = true
+    else
+      @created = false
+    end
+    redirect_to "you/bucket/create"
   end
 end
