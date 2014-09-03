@@ -39090,3 +39090,140 @@ Processing by StoreController#store as HTML
 
   Rendered store/store.html.haml within layouts/application (1.6ms)
 Completed 200 OK in 6501.3ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:18:10 +0300
+Processing by FetchController#show as HTML
+Completed 500 Internal Server Error in 2.9ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:18:12 +0300
+Processing by FetchController#show as HTML
+Completed 500 Internal Server Error in 3.0ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:18:13 +0300
+Processing by FetchController#show as HTML
+Completed 500 Internal Server Error in 3.9ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:18:13 +0300
+Processing by FetchController#show as HTML
+Completed 500 Internal Server Error in 5.1ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 14:18:19 +0300
+Processing by FetchController#index as HTML
+Completed 500 Internal Server Error in 3.4ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 14:19:01 +0300
+Processing by FetchController#index as HTML
+Completed 500 Internal Server Error in 2.2ms
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  app/models/user.rb:7:in `<class:User>'
+  app/models/user.rb:3:in `<top (required)>'
+  app/controllers/application_controller.rb:19:in `login_from_session'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-03 14:19:49 +0300
+Processing by FetchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 53.8ms (Views: 5.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/you" for 127.0.0.1 at 2014-09-03 14:19:54 +0300
+Processing by FetchController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered fetch/show.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 415.9ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/track?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 14:19:56 +0300
+Processing by FetchController#view as HTML
+  Parameters: {"track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered fetch/view.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 517.0ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/you/buckets?track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 14:19:58 +0300
+Processing by StoreController#bucketlist as HTML
+  Parameters: {"authenticity_token"=>"wR9OcBKk8gB12K2POPeb2+GFqFF+LOoCshJKYGSgwPU=", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+[AWS S3 200 0.629173 0 retries] list_buckets()  
+
+  Rendered store/bucketlist.html.haml within layouts/application (662.8ms)
+Completed 200 OK in 1303.6ms (Views: 664.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/you/buckets/store?bucket_name=1-fetchandstore&track_url=http%3A%2F%2Fsoundcloud.com%2Fvishalkirandesai%2Fdemo3" for 127.0.0.1 at 2014-09-03 14:20:00 +0300
+Processing by StoreController#store as HTML
+  Parameters: {"bucket_name"=>"1-fetchandstore", "track_url"=>"http://soundcloud.com/vishalkirandesai/demo3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[AWS S3 404 0.315965 0 retries] head_object(:bucket_name=>"1-fetchandstore",:key=>"demo3.aif") AWS::S3::Errors::NoSuchKey No Such Key
+
+[AWS S3 200 0.074862 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>0,:data=>#<StringIO:0x007f2940a1b448>,:key=>"demo3.aif")  
+
+[AWS S3 200 2.163549 0 retries] put_object(:bucket_name=>"1-fetchandstore",:content_length=>372782,:data=>#<StringIO:0x007f29402c8c40>,:key=>"demo3.aif")  
+
+  Rendered store/store.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 3660.4ms (Views: 32.7ms | ActiveRecord: 0.1ms)
